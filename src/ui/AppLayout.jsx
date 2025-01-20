@@ -3,12 +3,13 @@ import NavBar from "../components/NavBar";
 
 const AppLayout = () => {
   return (
-    <div
-      className="flex  flex-col relative w-screen h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url(/images/themeDragons.webp)" }}
-    >
-      <NavBar />
-      <Outlet />
+    <div className="relative w-screen h-screen bg-cover bg-center bg-[url(/images/themeDragons.webp)]">
+      <div className="absolute inset-0 bg-black opacity-40"></div>{" "}
+      {/* Przyciemnienie tła */}
+      <div className="relative z-10">
+        <NavBar />
+        <Outlet />
+      </div>
     </div>
   );
 };
