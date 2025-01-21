@@ -15,7 +15,7 @@ export default function NavBar() {
         </div>
 
         <div className="flex flex-col items-center w-1/2">
-          <h1 className=" animate-dragon-glow text-4xl font-bold">
+          <h1 className=" animate-dragon-glow text-4xl font-bold font-">
             My personal portfolio page
           </h1>
           <p className=" text-2xl font-semibold mt-4 ">
@@ -32,20 +32,20 @@ export default function NavBar() {
             </NavLink>
           </li>
           <li>
-            <a
-              href="#projects"
-              className="hover:text-blue-400 transition-all duration-300"
+            <NavLink
+              to="/projects"
+             className="hover:text-blue-400 hover:text-xl active:text-blue-400 transition-all duration-300"
             >
               Projects
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="#contact"
-              className="hover:text-blue-400 transition-all duration-300"
+            <NavLink
+              to="/contact"
+              className="hover:text-blue-400 hover:text-xl active:text-blue-400 transition-all duration-300"
             >
               Contact
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>
