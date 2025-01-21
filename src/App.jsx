@@ -10,6 +10,7 @@ export default function App() {
       <Routes>
         <Route element={<AppLayout />}>
           <Route index element={<MainPage />} />
+          <Route path="/HeroPage" element={<MainPage />} />
           <Route path="/aboutSection" element={<AboutSection />} />
         </Route>
       </Routes>

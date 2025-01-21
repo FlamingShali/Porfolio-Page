@@ -1,7 +1,7 @@
 const MainPage = () => {
   return (
-    <div className="text-white">
-      <h1>ghehehaserther</h1>
+    <div className="text-white transition-all duration-300">
+      
     </div>
   );
 };
