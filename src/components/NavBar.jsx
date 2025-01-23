@@ -2,10 +2,10 @@ import { NavLink } from "react-router";
 import MenuIcon from "../components/MenuIcon";
 export default function NavBar() {
   return (
-    <nav className="bg-transparent text-white w-full  px-12  z-20 font-serif ">
-      <div className="flex justify-between place-items-start flex-row">
+    <nav className="bg-transparent text-white w-full  px-12  z-20">
+      <div className=" animate-dragon-glow flex justify-between place-items-start flex-row">
         <div className="w-1/4 justify-start items-start">
-          <NavLink to="/HeroPage">
+          <NavLink to="/">
             <MenuIcon
               classNameIcon={
                 "rounded-full scale-50 hover:scale-75 transition-all duration-300 "
@@ -13,12 +13,11 @@ export default function NavBar() {
             />
           </NavLink>
         </div>
-
         <div className="flex flex-col items-center w-1/2">
-          <h1 className=" animate-dragon-glow text-4xl font-bold font-">
+          <h1 className="text-4xl ">
             My personal portfolio page
           </h1>
-          <p className=" text-2xl font-semibold mt-4 ">
+          <p className=" text-2xl mt-4 ">
             Frontend Developer & Designer
           </p>
         </div>
@@ -34,7 +33,7 @@ export default function NavBar() {
           <li>
             <NavLink
               to="/projects"
-             className="hover:text-blue-400 hover:text-xl active:text-blue-400 transition-all duration-300"
+              className="hover:text-blue-400 hover:text-xl active:text-blue-400 transition-all duration-300"
             >
               Projects
             </NavLink>
