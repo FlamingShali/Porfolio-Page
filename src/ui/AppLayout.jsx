@@ -4,9 +4,9 @@ import NavBar from "../components/NavBar";
 const AppLayout = () => {
   return (
     <div className="relative w-screen h-screen bg-cover bg-center bg-no-repeat bg-[url(/src/images/theme.png)]">
-      <div className="absolute inset-0 bg-black opacity-60 blur-2xl"></div>{" "}
+      <div className="absolute inset-0 bg-black opacity-60 blur-2xl"></div>
       {/* Przyciemnienie tła */}
-      <div className="relative z-10">
+      <div className="relative">
         <NavBar />
         <Outlet />
       </div>

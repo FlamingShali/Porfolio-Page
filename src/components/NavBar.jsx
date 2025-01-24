@@ -13,13 +13,10 @@ export default function NavBar() {
             />
           </NavLink>
         </div>
-        <div className="flex flex-col items-center w-1/2">
-          <h1 className="text-4xl ">
-            My personal portfolio page
-          </h1>
-          <p className=" text-2xl mt-4 ">
-            Frontend Developer & Designer
-          </p>
+        <div className=" relative flex flex-col items-center w-1/2">
+        <div className="absolute inset-0 bg-black opacity-110 blur-2xl"></div>
+          <h1 className=" relative text-4xl ">My personal portfolio page</h1>
+          <p className="relative text-2xl mt-4 ">Frontend Developer & Designer</p>
         </div>
         <ul className="flex w-1/4 space-x-6 justify-end m-auto text-l">
           <li>
