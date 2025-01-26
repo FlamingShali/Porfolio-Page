@@ -1,5 +1,4 @@
-import NavBar from "./components/NavBar";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainPage from "./pages/MainPage";
 import AppLayout from "./ui/AppLayout";
 import AboutSection from "./pages/AboutSection";
