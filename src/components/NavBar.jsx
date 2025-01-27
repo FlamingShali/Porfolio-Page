@@ -2,6 +2,8 @@ import { NavLink } from "react-router";
 import MenuIcon from "../components/MenuIcon";
 import NavBarLink from "./NavBarLink";
 export default function NavBar() {
+ 
+
   return (
     <nav className="bg-transparent text-white w-full  px-12  z-20">
       <div className=" animate-dragon-glow flex justify-between place-items-start flex-row">
