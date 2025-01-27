@@ -1,6 +1,6 @@
 import { NavLink } from "react-router";
 import MenuIcon from "../components/MenuIcon";
-import TestNav from "./testNav";
+import NavBarLink from "./NavBarLink";
 export default function NavBar() {
   return (
     <nav className="bg-transparent text-white w-full  px-12  z-20">
@@ -23,13 +23,13 @@ export default function NavBar() {
         </div>
         <ul className="flex w-1/4 space-x-6 justify-end m-auto text-l">
           <li>
-            <TestNav path="/aboutSection" >About me</TestNav>
+            <NavBarLink path="/aboutSection">About me</NavBarLink>
           </li>
           <li>
-            <TestNav path="/projects" >Projects</TestNav>
+            <NavBarLink path="/projects">Projects</NavBarLink>
           </li>
           <li>
-            <TestNav path="/contact" >Contact Me </TestNav>
+            <NavBarLink path="/contact">Contact Me </NavBarLink>
           </li>
         </ul>
       </div>
