@@ -11,7 +11,7 @@ export default function NavBar() {
   return (
     <>
       {isOpen ? (
-        <ul className="absolute md:m-auto left-32 w-32 top-10 ">
+        <ul className="absolute md:m-auto left-44  w-32 top-10 ">
           <NavBarLink path="/aboutSection">About me</NavBarLink>
 
           <li>
