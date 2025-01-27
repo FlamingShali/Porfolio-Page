@@ -11,7 +11,7 @@ export default function NavBar() {
   return (
     <>
       {isOpen ? (
-        <ul className="absolute md:m-auto left-44  w-32 top-10 ">
+        <ul className="w-screen text-center justify-center ">
           <NavBarLink path="/aboutSection">About me</NavBarLink>
 
           <li>
@@ -23,7 +23,7 @@ export default function NavBar() {
         </ul>
       ) : (
         <div>
-          <nav className="bg-transparent text-white w-full p-5 z-20">
+          <nav className="bg-transparent w-full p-5">
             <div className=" animate-dragon-glow flex justify-between flex-row">
               <div className="w-1/4 justify-start items-start">
                 <NavLink to="/">
@@ -44,7 +44,7 @@ export default function NavBar() {
                   Frontend Developer & Designer
                 </p>
               </div>
-              <ul className="hidden lg:flex md:w-1/5 space-x-6 justify-end m-auto text-sm">
+              <ul className="hidden lg:flex md:w-1/5 space-x-6 justify-end m-auto">
                 <li>
                   <NavBarLink path="/aboutSection">About me</NavBarLink>
                 </li>
