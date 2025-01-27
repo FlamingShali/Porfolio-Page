@@ -1,10 +1,10 @@
 const AboutSection = () => {
   return (
-    <div className="text:sm md:text-3xl flex flex-col bg-transparent justify-items-center text-center">
-      <h1 className="self-center m-10 font-semibold animate-core-appear">
+    <div className=" absolute md:m-auto left-0 right-0 md:top-40 top-60 text:sm md:text-3xl flex flex-col bg-transparent justify-items-center text-center">
+      <h1 className=" self-center m-10 font-semibold animate-core-appear">
         Something about me
       </h1>
-      <div className=" text:sm relative animate-appear-down justify-items-center text-center md:text-lg md:m-11 p-3">
+      <div className=" font-sans h-full text:sm relative animate-appear-down justify-items-center text-center md:text-lg md:m-11 p-3">
         <p className="mb-3">
           Hello! I'am very happy you reached here. My name is Michał, an
           aspiring programmer.
