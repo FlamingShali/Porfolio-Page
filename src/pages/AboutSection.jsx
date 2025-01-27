@@ -1,9 +1,10 @@
-
 const AboutSection = () => {
   return (
-    <div className="text-3xl flex flex-col bg-transparent justify-items-center text-center">
-      <h1 className="self-center m-10 font-semibold animate-core-appear">Something about me</h1>
-      <div className="relative animate-appear-down justify-items-center text-center text-lg m-11 p-3">
+    <div className="text:sm md:text-3xl flex flex-col bg-transparent justify-items-center text-center">
+      <h1 className="self-center m-10 font-semibold animate-core-appear">
+        Something about me
+      </h1>
+      <div className=" text:sm relative animate-appear-down justify-items-center text-center md:text-lg md:m-11 p-3">
         <p className="mb-3">
           Hello! I'am very happy you reached here. My name is Michał, an
           aspiring programmer.
@@ -27,7 +28,6 @@ const AboutSection = () => {
           and contributing to projects that make a difference.
         </p>
       </div>
-      
     </div>
   );
 };

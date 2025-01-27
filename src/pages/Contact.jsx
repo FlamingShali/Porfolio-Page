@@ -6,7 +6,7 @@ export default function Contact() {
       "mailto:michal.klepner2@gmail.com?subject=Contact Me&body=Tell me, what can I do for you.";
   };
   return (
-    <div className="h-96 text-center flex flex-col justify-center w-1/4 absolute m-auto left-0 right-0 top-40">
+    <div className="md:h-96 text-center flex flex-col justify-center md:w-1/4 absolute md:m-auto left-0 right-0 md:top-40 top-60 ">
       <h2 className="mb-5 text-xl font-black">
         You can reach me via socials bellow
       </h2>
