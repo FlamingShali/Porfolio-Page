@@ -1,19 +1,18 @@
 import { NavLink } from "react-router";
-import Photo1 from "./../images/CC.webp";
-import Photo2 from "./../images/image1.jpg";
-import Photo3 from "./../images/image1.jpg";
+import CCImage from "./../images/CC.webp";
 import { Slide, Fade } from "react-awesome-reveal";
 
 const CardsData = [
   {
     id: 1,
-    img: Photo1,
+    img: CCImage,
     title: "Currency converter",
     desc: "Check the current exchange rates",
   },
- 
+  
 ];
 const ProjectCards = () => {
+
   return (
     <div className="container mx-auto">
       <h1 className="text-center  text-white font-bold text-3xl mb-14 mt-5 sm:mt-0">
@@ -44,6 +43,7 @@ const ProjectCards = () => {
                     <div>
                       <NavLink
                         to="https://currency-converter-nn7c.vercel.app/"
+                        target="_blank"
                         className="border border-white px-4 py-2 rounded-lg hover:bg-black/20 duration-300"
                       >
                         View
