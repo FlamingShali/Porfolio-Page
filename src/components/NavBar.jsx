@@ -11,15 +11,10 @@ export default function NavBar() {
   return (
     <>
       {isOpen ? (
-        <ul className="w-screen text-center justify-center ">
+        <ul className="w-screen text-center justify-center">
           <NavBarLink path="/aboutSection">About me</NavBarLink>
-
-          <li>
-            <NavBarLink path="/projects">Projects</NavBarLink>
-          </li>
-          <li>
-            <NavBarLink path="/contact">Contact Me </NavBarLink>
-          </li>
+          <NavBarLink path="/projects">Projects</NavBarLink>
+          <NavBarLink path="/contact">Contact Me </NavBarLink>
         </ul>
       ) : (
         <div>
@@ -33,15 +28,14 @@ export default function NavBar() {
                   />
                 </NavLink>
               </div>
-              <div className=" relative flex flex-col items-center w-4/5 lg:w-1/2 ">
+              <div className=" relative flex flex-col items-center w-4/5 lg:w-1/2 md:text-2xl lg:text-3xl ">
                 <div className="absolute inset-0 bg-black opacity-110 blur-2xl"></div>
-                <h1 className="text-center relative text:sm md:text-base ">
+                <h1 className="text-center relative text:sm ">
                   My personal portfolio page
                 </h1>
-
-                <p className="text-center relative text:sm md:text-2xl mt-4 ">
+                <h2 className="text-center relative text:sm  mt-4 ">
                   Frontend Developer & Designer
-                </p>
+                </h2>
               </div>
               <ul className="hidden lg:flex md:w-1/5 space-x-6 justify-end m-auto">
                 <NavBarLink path="/aboutSection">About me</NavBarLink>
