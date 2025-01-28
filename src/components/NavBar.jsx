@@ -1,8 +1,8 @@
 import { NavLink } from "react-router";
-import MenuIcon from "../components/MenuIcon";
 import NavBarLink from "./NavBarLink";
 import { useState } from "react";
 import { X, Menu } from "lucide-react";
+import menuIcon from "./../images/menuIcon.jpg";
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => {
@@ -27,10 +27,9 @@ export default function NavBar() {
             <div className=" animate-dragon-glow flex justify-between flex-row">
               <div className="w-1/4 justify-start items-start">
                 <NavLink to="/">
-                  <MenuIcon
-                    classNameIcon={
-                      "rounded-full scale-50 hover:scale-75 transition-all duration-300 "
-                    }
+                  <img
+                    className="rounded-full scale-50 hover:scale-75 transition-all duration-300 "
+                    src={menuIcon}
                   />
                 </NavLink>
               </div>
