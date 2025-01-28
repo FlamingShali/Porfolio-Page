@@ -22,7 +22,7 @@ export default function Contact() {
         >
           Contact me via Linkedin
         </ContactLink>
-        <ContactLink clickHandler={mailHandler}>
+        <ContactLink path=" " clickHandler={mailHandler}>
           Contact me via e-mail
         </ContactLink>
       </div>
