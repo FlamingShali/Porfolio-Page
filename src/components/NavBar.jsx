@@ -45,18 +45,12 @@ export default function NavBar() {
                 </p>
               </div>
               <ul className="hidden lg:flex md:w-1/5 space-x-6 justify-end m-auto">
-                <li>
-                  <NavBarLink path="/aboutSection">About me</NavBarLink>
-                </li>
-                <li>
-                  <NavBarLink path="/projects">Projects</NavBarLink>
-                </li>
-                <li>
-                  <NavBarLink path="/contact">Contact Me </NavBarLink>
-                </li>
+                <NavBarLink path="/aboutSection">About me</NavBarLink>
+                <NavBarLink path="/projects">Projects</NavBarLink>
+                <NavBarLink path="/contact">Contact Me </NavBarLink>
               </ul>
               <div className="lg:hidden w-1/4 relative">
-                <div className=" absolute left-10 sm:left-24"></div>
+                <div className="absolute left-10 sm:left-24"></div>
               </div>
             </div>
           </nav>

@@ -11,18 +11,7 @@ const CardsData = [
     title: "Currency converter",
     desc: "Check the current exchange rates",
   },
-  {
-    id: 2,
-    img: Photo2,
-    title: "Dog",
-    desc: "Each character will appear one by one",
-  },
-  {
-    id: 3,
-    img: Photo3,
-    title: "Sunrise",
-    desc: "Each character will appear one by one",
-  },
+ 
 ];
 const ProjectCards = () => {
   return (
