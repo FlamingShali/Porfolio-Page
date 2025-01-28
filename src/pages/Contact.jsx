@@ -1,6 +1,8 @@
 import ContactLink from "../components/ContactLink";
+import DocumentTitle from "../hooks/DocumentTitle";
 
 export default function Contact() {
+  DocumentTitle("Portfolio - Contact");
   const mailHandler = () => {
     window.location.href =
       "mailto:michal.klepner2@gmail.com?subject=Contact Me&body=Tell me, what can I do for you.";
