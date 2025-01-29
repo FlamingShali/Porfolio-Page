@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 
 const AppLayout = () => {
   return (
-    <div>
+    <div className="justify-center items-center flex flex-col">
       <NavBar />
       <Outlet />
     </div>

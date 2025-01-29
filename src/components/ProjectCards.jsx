@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import CCImage from "./../images/CC.webp";
+import CCImage from "./../images/CC.jpg";
 import { Slide, Fade } from "react-awesome-reveal";
 
 const CardsData = [
@@ -30,7 +30,7 @@ const ProjectCards = () => {
               <img
                 src={img}
                 alt=""
-                className="w-full max-w-[300px] h-[350px] rounded-lg"
+                className="w-full max-w-[500px] h-[300px] rounded-lg"
               />
               {/* overlay section */}
               <div className="absolute left-0 top-[-100%] opacity-0 group-hover:opacity-100 group-hover:top-[0] p-4 w-full h-full bg-black/60 group-hover:backdrop-blur-sm duration-500">
