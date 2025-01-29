@@ -9,11 +9,16 @@
 }
 
 body {
-  font-family:'Times New Roman', Times, serif;
+  background-color: #111723;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
   color: white;
-  background-color: black;
+  margin: 0;
+  padding-top: env(safe-area-inset-top, 0);
+  padding-bottom: env(safe-area-inset-bottom, 0);
 }
 
 .active {
   color: #60a5fa;
 }
+

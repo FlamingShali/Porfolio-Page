@@ -4,17 +4,20 @@ import DocumentTitle from "../hooks/DocumentTitle";
 const MainPage = () => {
   DocumentTitle("Portfolio - Main");
   return (
-    <div className="text-white transition-all absolute duration-300 flex flex-col justify-center text-center m-auto left-0 right-0 top-56 md:top-40 font-semibold md:w-1/6">
-      <MainNavLink path="/aboutSection" speed={"quick"}>
-        About me
-      </MainNavLink>
-      <MainNavLink path="/projects" speed={"medium"}>
-        My Projects
-      </MainNavLink>
-      <MainNavLink path="/contact" speed={"long"}>
-        Contact Me
-      </MainNavLink>
-    </div>
+    <main className="text-8xl relative opacity-[1] left-0">
+      <div className="flex flex-col  absolute m-auto top-60 left-40 animate-appear-medium">
+        <h1 className="bg-gradient-to-r from-teal-200 to-blue-200 inline-block text-transparent bg-clip-text">
+          Front-End
+          <br />
+          Developer
+        </h1>
+        <br />
+        <p className="text-2xl">My name is Michał, a front-end, web developer<p>
+          from Poland, now living in Warsaw.
+          </p> 
+        I create beautiful and responsive websites that are easy to use. </p>
+      </div>
+    </main>
   );
 };
 

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import NavBarLink from "./NavBarLink";
 import { useState } from "react";
 import { X, Menu } from "lucide-react";
@@ -17,36 +17,19 @@ export default function NavBar() {
           <NavBarLink path="/contact">Contact Me </NavBarLink>
         </ul>
       ) : (
-        <div>
-          <nav className="bg-transparent w-full p-5">
-            <div className=" animate-dragon-glow flex justify-between flex-row">
-              <div className="w-1/4 justify-start items-start">
-                <NavLink to="/">
-                  <img
-                    className="rounded-full scale-50 hover:scale-75 transition-all duration-300 "
-                    src={menuIcon}
-                  />
-                </NavLink>
-              </div>
-              <div className=" relative flex flex-col items-center w-4/5 lg:w-1/2 md:text-2xl lg:text-3xl ">
-                <div className="absolute inset-0 bg-black opacity-110 blur-2xl"></div>
-                <h1 className="text-center relative text:sm ">
-                  My personal portfolio page
-                </h1>
-                <h2 className="text-center relative text:sm  mt-4 ">
-                  Frontend Developer & Designer
-                </h2>
-              </div>
-              <ul className="hidden lg:flex md:w-1/5 space-x-6 justify-end m-auto">
-                <NavBarLink path="/aboutSection">About me</NavBarLink>
-                <NavBarLink path="/projects">Projects</NavBarLink>
-                <NavBarLink path="/contact">Contact Me </NavBarLink>
-              </ul>
-              <div className="lg:hidden w-1/4 relative">
-                <div className="absolute left-10 sm:left-24"></div>
-              </div>
-            </div>
-          </nav>
+        <div className="w-1/5">
+          <header className="bg-transparent border fixed top-0 left-0 right-0 w-full flex justify-between items-center lg:p-[34px]  z-30 border-[#414a5a] rounded-[20px] my-0 mx-auto max-w-[1280px] h-24">
+            <Link className="text-2xl animate-dragon-glow" to="/">
+              Michał Klepner
+            </Link>
+            <ul className="uppercase hidden  lg:flex md:w-2/5 space-x-6 w-full">
+              <NavBarLink path="/aboutSection">About me</NavBarLink>
+              <NavBarLink path="/projects">Projects</NavBarLink>
+              <NavBarLink path="/contact">Services </NavBarLink>
+              <NavBarLink path="/contact">Contact Me </NavBarLink>
+            </ul>
+            <button className="w-[71px] p-[6px 32px 6px 8px]">EN</button>
+          </header>
         </div>
       )}
       <button

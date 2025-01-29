@@ -5,7 +5,7 @@ const AboutSection = () => {
   DocumentTitle("Portfolio - About me");
   return (
     <div className=" absolute md:m-auto left-0 right-0 md:top-40 top-60  md:text-2xl flex flex-col bg-transparent justify-items-center text-center">
-      <h1 className=" self-center m-10 font-semibold animate-core-appear">
+      <h1 className=" self-center m-10 font-semibold">
         Something about me
       </h1>
       <div className="font-sans relative animate-appear-down md:m-11 lg:text-lg p-3">

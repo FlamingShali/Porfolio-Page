@@ -7,7 +7,7 @@ const NavBarLink = ({ children, path }) => {
       <NavLink
         viewTransition
         className="hover:text-blue-400 scale-50  hover:scale-125 active:text-blue-400 transition-all duration-300
-        sm:text-sm "
+        sm:text-sm md:text-lg  "
         to={path}
       >
         {children}
