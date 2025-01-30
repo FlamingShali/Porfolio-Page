@@ -13,8 +13,10 @@ const AboutSection = () => {
   DocumentTitle("Portfolio - About me");
   return (
     <div className=" absolute md:m-auto left-0 right-0 md:top-40 top-60  md:text-2xl flex flex-col bg-transparent justify-items-center text-center">
-      <h1 className="m-10 font-semibold">Something about me</h1>
-      <div className="font-sans relative animate-appear-down md:m-11 lg:text-lg p-3">
+      <h1 className="relative animate-appear-quick m-10 font-semibold">
+        Something about me
+      </h1>
+      <div className="animate-appear-quick font-sans relative  md:m-11 lg:text-lg p-3">
         <Paragraph>
           Hello! I'am very happy you reached here. My name is Michał, an
           aspiring programmer.
@@ -39,8 +41,10 @@ const AboutSection = () => {
         </Paragraph>
       </div>
 
-      <h1 className="m-10 font-semibold">Technologies</h1>
-      <div className=" flex flex-row  justify-center">
+      <h1 className="relative animate-appear-quick m-10 font-semibold">
+        Technologies
+      </h1>
+      <div className="relative animate-appear-quick flex flex-row  justify-center">
         <TechIcon srcIcon={HtmlIcon} />
         <TechIcon srcIcon={JSIcon} />
         <TechIcon srcIcon={ReactIcon} />
