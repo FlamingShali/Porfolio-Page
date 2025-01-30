@@ -33,7 +33,7 @@ export default function NavBar() {
           <ul className="uppercase hidden  lg:flex md:w-2/5 space-x-6 w-full">
             <NavBarLink path="/aboutSection">About me</NavBarLink>
             <NavBarLink path="/projects">Projects</NavBarLink>
-            <NavBarLink path="/contact">Services </NavBarLink>
+            <NavBarLink path="/services">Services </NavBarLink>
             <NavBarLink path="/contact">Contact Me </NavBarLink>
           </ul>
           <div className="flex flex-row">
