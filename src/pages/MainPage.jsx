@@ -13,9 +13,15 @@ const MainPage = () => {
         </h1>
         <br />
         <p className="animate-appear-quick md:text-2xl">
-          My name is Michał, a front-end and aspiring full-stack developer
-          <p>from Poland, now living in Warsaw.</p>I create beautiful and
-          responsive websites that are easy to use.{" "}
+          I'm an aspiring Full Stack Developer, currently focusing on Front-End
+          Development.
+        </p>
+        <p className="animate-appear-quick md:text-2xl">
+          My goal is to bring ideas to life with clean, interactive, and
+          responsive designs.
+        </p>
+        <p className="animate-appear-quick md:text-2xl">
+          I'm actively seeking my first role as a Trainee/Junior Developer.
         </p>
         <Link
           to="/projects"

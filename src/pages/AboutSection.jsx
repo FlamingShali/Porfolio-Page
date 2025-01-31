@@ -6,17 +6,18 @@ import ReactIcon from "./../images/react.png";
 import CSSIcon from "./../images/css.png";
 import PythonIcon from "./../images/python.png";
 import CSharpIcon from "./../images/c-sharp.png";
+import TailwindIcon from "./../images/tailwind-css.svg";
 import TechIcon from "../components/TechIcon";
 import { Link } from "react-router";
 
 const AboutSection = () => {
   DocumentTitle("Portfolio - About me");
   return (
-    <div className=" absolute md:m-auto left-0 right-0 md:top-40 top-60  md:text-2xl flex flex-col bg-transparent justify-items-center text-center">
+    <div className="md:text-2xl flex flex-col bg-transparent items-center justify-center text-center">
       <h1 className="relative animate-appear-quick m-10 font-semibold">
         Something about me
       </h1>
-      <div className="animate-appear-quick font-sans relative  md:m-11 lg:text-lg p-3">
+      <div className="animate-appear-quick font-sans relative xl:w-4/5  md:m-11 lg:text-lg p-3">
         <Paragraph>
           Hello! I'am very happy you reached here. My name is Michał, an
           aspiring programmer.
@@ -29,8 +30,7 @@ const AboutSection = () => {
           look great but also provide an intuitive experience for users.
         </Paragraph>
         <Paragraph>
-          I'm always eager to learn and grow as a developer. In the future, I
-          plan to expand my skill set by diving into Python, C#, and SQL to
+          I'm always eager to learn and grow as a developer. Soon, I want to expand my skill set by diving into Python, C#, and SQL to
           explore full-stack development and backend technologies.
         </Paragraph>
         <Paragraph>
@@ -46,9 +46,10 @@ const AboutSection = () => {
       </h1>
       <div className="relative animate-appear-quick flex flex-row  justify-center">
         <TechIcon srcIcon={HtmlIcon} />
+        <TechIcon srcIcon={CSSIcon} />
         <TechIcon srcIcon={JSIcon} />
         <TechIcon srcIcon={ReactIcon} />
-        <TechIcon srcIcon={CSSIcon} />
+        <TechIcon srcIcon={TailwindIcon} />
         <TechIcon srcIcon={PythonIcon} />
         <TechIcon srcIcon={CSharpIcon} />
       </div>

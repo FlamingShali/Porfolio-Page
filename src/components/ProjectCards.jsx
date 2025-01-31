@@ -9,18 +9,16 @@ const CardsData = [
     title: "Currency converter",
     desc: "Check the current exchange rates",
   },
-  
 ];
 const ProjectCards = () => {
-
   return (
-    <div className="container mx-auto">
+    <div className=" container mx-auto">
       <h1 className="text-center  text-white font-bold text-3xl mb-14 mt-5 sm:mt-0">
         My Projects
       </h1>
 
       {/* cards section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-6">
+      <div className="animate-appear-quick relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-6">
         {CardsData.map(({ id, img, title, desc }) => {
           return (
             <div
